@@ -6,7 +6,12 @@ const CardioSchema = new Schema({
     distance: {
         type: Number,
         required: true,
-        min: [0, "Please enter a distance ran."]
+        min: [1, "Please enter a distance ran."]
+    },
+    duration: {
+        type: Number,
+        required: true,
+        min: [1,"Please enter a duration."]
     }
 }, Exercise.options);
 

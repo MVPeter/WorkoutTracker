@@ -1,6 +1,9 @@
 const path = require('path');
 
-module.exports = function(app) {
+module.exports = (app) => {
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(process.cwd() + '/public/index.html'));
+  });
   app.get('/exercise', (req, res) => {
     res.sendFile(path.join(process.cwd() + '/public/exercise.html'));
   });

@@ -13,7 +13,9 @@ const ResistanceSchema = new Schema({
         type: Number
     },
     duration: {
-        type: Number
+        type: Number,
+        required: true,
+        min: [1,"Please enter a duration."]
     }
 })
 
