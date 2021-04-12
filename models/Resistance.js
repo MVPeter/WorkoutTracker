@@ -20,3 +20,4 @@ const ResistanceSchema = new Schema({
 })
 
 const Resistance = Exercise.discriminator("Resistance", ResistanceSchema);
+module.exports = Resistance
