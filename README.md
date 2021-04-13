@@ -3,7 +3,7 @@
   * [GitHub Repository](https://github.com/MVPeter/WorkoutTracker)
   * [Keroku Deploy](https://mp-workouttracker.herokuapp.com/)
 
-  ![License: MIT](https://img.shields.io/badge/License-None-informational "License Badge")
+  ![License: MIT](https://img.shields.io/badge/license-MIT-green)
       
   ## Table of Contents
     - Discription
@@ -27,13 +27,16 @@
   
   ## Installation
 
-  npm install  npm run seed requires a Mongo database
+  - requires a [MongoDB](https://www.mongodb.com/)
+  - npm install  
+  - npm run seed 
+  
 
   ---
   
   ### Usage
 
-    * Setup a mongo database
+    * node server.js
 
   ---
   
@@ -50,7 +53,7 @@
   
   ### License
 
-    * This project is covered by the following license(s): None
+    * This project is covered by the following license(s): MIT
     
 
   ---
