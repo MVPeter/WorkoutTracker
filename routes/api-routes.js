@@ -1,6 +1,4 @@
-// const express = require("express");
 
-// const app = express();
 const db = require("../models");
 
 module.exports = (app) => {
@@ -12,7 +10,7 @@ module.exports = (app) => {
                     $addFields: { totalDuration: { $sum: "$exercises.duration" } }
                 }
             ])
-            // .populate("exercises")
+           
             .then(workoutDB => {
                 res.json(workoutDB);
             })
